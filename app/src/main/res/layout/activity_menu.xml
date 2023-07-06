@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:background="@android:color/transparent"
+        android:id="@+id/tampilMahasiswaButton"
         android:layout_columnWeight="1"
         android:textColor="#fff"
         android:drawableLeft="@drawable/student"
