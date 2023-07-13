@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -46,6 +47,7 @@ public class TampilMahasiswaActivity extends AppCompatActivity
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody)
             {
+                Log.d("********",new String(responseBody) );
                 Gson g = new Gson();
                 List<MahasiswaModel> mahasiswaModelList = g.fromJson(new String(responseBody), new TypeToken<List<MahasiswaModel>>(){}.getType());
 

@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/gradient_a"
         android:id="@+id/recyclerView1">
     </androidx.recyclerview.widget.RecyclerView>
 
@@ -21,5 +21,6 @@
         android:layout_marginBottom="20dp"
         android:src="@android:drawable/ic_input_add"
         android:backgroundTint="#444444"
-        android:id="@+id/addButton"/>
+        android:id="@+id/addButton">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 </FrameLayout>
