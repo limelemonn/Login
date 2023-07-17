@@ -14,7 +14,7 @@
         android:drawableRight="@drawable/img_dollar_128"
         android:textColor="#fff"
         android:text="Forex"
-        android:="@+id/tampilForexButton"></Button>
+        android:id="@+id/tampilForexButton"></Button>
     <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:background="@android:color/transparent"
-        android:drawableRight="@android:img_weather_lightning_128"
+        android:drawableRight="@drawable/img_weather_lightning_128"
         android:id="@+id/tampilCuacaButton"
         android:layout_columnWeight="1"
         android:textColor="#fff"

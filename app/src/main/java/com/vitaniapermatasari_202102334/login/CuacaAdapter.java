@@ -54,8 +54,65 @@ import com.squareup.picasso.Picasso;
 
             String suhu = formatNumber(toCelcius(mm.getTemp_min()),"###.##")+"°C -" + formatNumber(toCelcius(mm.getTemp_mix()),"###.##")+ "°C";
 
-            String iconUrl = "https://openweathermap.org/img/wn" + wm.getIcon() +"@2x.png";
-            Picasso.with(_activity).load(iconUrl).into(holder.cuacaImageView);
+            switch (wm.getIcon()){
+                case "01d":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_01d);
+                    break;
+
+                case "01n":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_01n);
+                    break;
+
+                case "02d":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_02d);
+                    break;
+
+                case "02n":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_02n);
+                    break;
+
+                case "03d":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_03d);
+                    break;
+
+                case "03n":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_03n);
+                    break;
+
+                case "04d":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_04d);
+                    break;
+
+                case "04n":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_04n);
+                    break;
+
+                case "09d":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_09d);
+                    break;
+
+                case "09n":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_09n);
+                    break;
+
+                case "10d":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_10d);
+                    break;
+
+                case "10n":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_10n);
+                    break;
+
+                case "11d":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_11d);
+                    break;
+
+                case "11n":
+                    holder.cuacaImageView.setImageResource(R.mipmap.ic_11n);
+                    break;
+            }
+            //String iconUrl = "https://openweathermap.org/img/wn" + wm.getIcon() +"@2x.png";
+            //Picasso.with(_activity).load(iconUrl).into(holder.cuacaImageView);
 
             String tanggalWaktuWib = formatWib(lm.getDt_txt());
 

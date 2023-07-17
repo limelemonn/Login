@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".CuacaMainActivity"
     android:id="@+id/swipeRefreshLayout2">
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/recyclerView2"
         android:background="@drawable/gradient_a">
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.recyclerview.widget.RecyclerView>
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
