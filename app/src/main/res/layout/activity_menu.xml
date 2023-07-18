@@ -34,4 +34,15 @@
         android:textColor="#fff"
         android:text="Cuaca">
     </Button>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:id="@+id/tampilImplicitButton"
+        android:drawableLeft="@drawable/img_teenagers_128"
+        android:layout_columnWeight="1"
+        android:textColor="#fff"
+        android:text="Implicit Intent">
+    </Button>
 </GridLayout>
